@@ -1,40 +1,65 @@
-.foi-footer {
-    padding-top: 150px;
-    padding-bottom: 110px;
-    background-color: $white;
-    background-image: url(../images/Footer_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.oleez-footer {
+    background-color: #0e0e0f;
+    color: $white;
 
     .footer-content {
-        padding-bottom: 34px;
-        border-bottom: 1px solid rgba($border-color, 0.39);
-    }
+        padding-top: 90px;
+        padding-bottom: 45px;
 
-    .footer-widget-area {
-        padding-top: 70px;
+        .footer-logo {
+            height: 30px;
+            margin-bottom: 19px;
+        }
 
-        p {
-            font-size: 15px;
-            @extend .font-os;
-            font-weight: $font-weight-semibold;
-            color: #fefefe;
+        .footer-intro-text {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 26px;
+            max-width: 288px;
+        }
+
+        .footer-social-links {
+            a {
+                font-size: 14px;
+                font-weight: $font-weight-bold;
+                line-height: 1;
+                color: inherit;
+                margin-right: 10px;
+            }
+        }
+
+        .footer-widget-text {
+            margin-bottom: 40px;
+
+            .widget-title {
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+                line-height: 1.5;
+                margin-bottom: 6px;
+                color: theme-color();
+            }
+
+            .widget-content {
+                font-size: 14px;
+                line-height: 1.29;
+            }
         }
     }
 
-    .nav-link {
-        font-size: 15px;
-        line-height: 2.33;
-        @extend .font-os;
-        font-weight: $font-weight-semibold;
-        color: #fefefe;
-        padding: 0;
-    }
+    .footer-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 44px;
+        padding-bottom: 44px;
 
-    .social-menu {
-        a {
-            display: inline-block;
-            margin-right: 10px;
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.29;
         }
     }
 }

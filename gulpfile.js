@@ -44,10 +44,18 @@ function buildVendors() {
                      .pipe(gulp.dest('./assets/vendors/jquery'));
     var addon3 = gulp.src('./node_modules/popper.js/dist/umd/**/*')
                      .pipe(gulp.dest('./assets/vendors/popper.js'));
-    var addon4 = gulp.src('./node_modules/@fortawesome/fontawesome-free/**/*')
-                     .pipe(gulp.dest('./assets/vendors/fontawesome-free'));
+    var addon4 = gulp.src('./node_modules/animate.css/**/**')
+                     .pipe(gulp.dest('./assets/vendors/animate.css'));
+    var addon5 = gulp.src('./node_modules/wowjs/dist/*')
+                     .pipe(gulp.dest('./assets/vendors/wowjs'));
+    var addon6 = gulp.src('./node_modules/slick-carousel/slick/**/**')
+                     .pipe(gulp.dest('./assets/vendors/slick-carousel'));
+    var addon7 = gulp.src('./node_modules/@fancyapps/fancybox/dist/*')
+                     .pipe(gulp.dest('./assets/vendors/fancybox'));
+    var addon8 = gulp.src('./node_modules/masonry-layout/dist/*')
+                     .pipe(gulp.dest('./assets/vendors/masonry-layout'));
 
-    return (addon1, addon2, addon3, addon4);
+    return (addon1, addon2, addon3, addon4, addon5, addon6, addon7, addon8);
 }
 
 exports.style = style;
